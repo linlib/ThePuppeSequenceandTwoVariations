@@ -452,13 +452,13 @@ Here are the packages that I use
 {\footnotesize
 \begin{center}
 \scalebox{1.1}{
-\begin{tabular}{|| l | l || l | l | l | l | l || l | l || l | l | l | l | l || } 
+\begin{tabular}{|| l | l || l | l || l | l || l | l || } 
 \hline
-$\texttt{IntCat}$ & \texttt{D(}∞\texttt{-Cat)} & Σ⃗ & Ω⃗ & P⃗ & B⃗ & E⃗ & $\texttt{InfPreShf}$ & \texttt{D(}∞\texttt{-Cat/C)} & σ⃗ & ω⃗ &  p⃗ & b⃗ & e⃗\\
+$\texttt{IntCat}$ & \texttt{D(}∞\texttt{-Cat)} & B⃗ & E⃗ & $\texttt{InfPreShf}$ & \texttt{D(}∞\texttt{-Cat/C)} & b⃗ & e⃗\\
 \hline
-$\texttt{IntGrpd}$ & \texttt{D(}∞\texttt{-Grpd)} & Σ⃡ & Ω⃡ & P⃡ & B⃡ & E⃡ & $\texttt{IntAct}$ & \texttt{D(}∞\texttt{-Grpd/G)} & σ⃡ & ω⃡ & p⃡ & b⃡ & e⃡\\
+$\texttt{IntGrpd}$ & \texttt{D(}∞\texttt{-Grpd)} & B⃡ & E⃡ & $\texttt{IntAct}$ & \texttt{D(}∞\texttt{-Grpd/G)} & b⃡ & e⃡\\
  \hline
-$\texttt{IntGrp}$ & \texttt{D(}∞\texttt{-Grpd₀)} & Σ & Ω & P & B & E & $\texttt{IntAct₀}$ & \texttt{D(}∞\texttt{-Grpd₀/G₀)} & σ & ω & p & b & e\\
+$\texttt{IntGrp}$ & \texttt{D(}∞\texttt{-Grpd₀)} & B & E & $\texttt{IntAct₀}$ & \texttt{D(}∞\texttt{-Grpd₀/G₀)} & b & e\\
  \hline
 \end{tabular}}
 \end{center}}
@@ -467,11 +467,6 @@ $\texttt{IntGrp}$ & \texttt{D(}∞\texttt{-Grpd₀)} & Σ & Ω & P & B & E & $\t
 \begin{center}
 \begin{tcolorbox}[width=6in,colback={white}]
 \begin{center}
-\scalebox{0.85}{∀(C:D(∞-Cat)),∀(D:D(∞-Cat)),∀(F:C ⭢ D),∀(G:C ⭢ D),(∀(n:Nat),(π⃗ₙ F = π⃗ₙ G)) → F = G}\\
-\ \\
-\scalebox{0.85}{∀(X:D(∞-Grpd)),∀(Y:D(∞-Grpd)),∀(f:X ⭢ Y),∀(g:X ⭢ Y),(∀(n:Nat),(π⃡ₙ f = π⃡ₙ g)) → f = g}\\
-\ \\
-\scalebox{0.85}{∀(X:D(∞-Grpd₀)),∀(Y:D(∞-Grpd₀)),∀(f:X ⭢ Y),∀(g:X ⭢ Y),(∀(n:Nat),(πₙ f = πₙ g)) → f = g}\\
 \ \\
 \scalebox{0.85}{$\cdots$ ⭢ π⃗₁.obj C ⭢ π⃗₁.obj D $\circlearrowright$ π⃗₀.obj ((𝟙 C) • ((ω⃗.hom (𝟙 D)).hom f) ) ⭢ (π⃗₀.obj C) ⭢ (π⃗₀.obj D)}\\
 \ \\
@@ -492,11 +487,10 @@ $\texttt{IntGrp}$ & \texttt{D(}∞\texttt{-Grpd₀)} & Σ & Ω & P & B & E & $\t
 
 
 \begin{center}
-\texttt{Plans to prove three variations of the}\\
-\texttt{Whitehead theorem and the exactness of}\\
-\texttt{three variations of the Puppe sequence}\\
-\texttt{of homotopy groups in Lean 4, with}\\
-\texttt{extensive use of Mathlib 4}
+\texttt{Plans to define three variations of the}\\
+\texttt{Puppe sequence of homotopy groups in and}\\
+\texttt{Lean 4, and to prove their exactness,}\\
+\texttt{with extensive use of Mathlib 4}
 \end{center}
 
 
@@ -794,14 +788,12 @@ D(Pair ∞-Cat) & The derived category of pairs \\
 \newpage
 \section{Introduction}
 
-{\bf The main goals of this repository is to prove three variations of the Whitehead theorem and to establish three variations of the Puppe sequence}. It is important that initial pull requests stemming from our work remain basic and accessible; we hope to make progress which is gradual and incremental.\\
-
-Besides this goal, we have two others. Here are the three Whitehead Theorems which form our main three goals:
+{\bf The main goals of this repository is to define three variations of the Puppe sequence in Lean 4 and to prove their exactness}:
 
 \begin{enumerate}[(a)]
-\item (The Whitehead theorem for ∞-categories) ∀(E:D(∞-Cat)),∀(B:D(∞-Cat)),∀(F:E ⭢ B),∀(G:E ⭢ B),(∀(n:Nat),(π⃗ₙ F = π⃗ₙ G)) → F = G, where π⃗ₙ is notation for π⃗ n.
-\item (The Whitehead theorem for ∞-groupoids) ∀(E:D(∞-Grpd)),∀(B:D(∞-Grpd)),∀(F:E ⭢ B),∀(G:E ⭢ B),(∀(n:Nat),(π⃡ₙ F = π⃡ₙ G)) → F = G, where π⃡ₙ is notation for π⃡ n.
-\item (The Whitehead theorem for based connected ∞-groupoids) ∀(E:D(∞-Grpd₀)),∀(B:D(∞-Grpd₀)),∀(F:E ⭢ B),∀(G:E ⭢ B),(∀(n:Nat),(πₙ F = πₙ G)) → F = G, where πₙ is notation for π n.
+\item ...
+\item ...
+\item ...
 \end{enumerate}
 
 We have stated these theorems in the above in an order reversed from the order of its implementation. This choice 
@@ -1034,40 +1026,32 @@ The term ``remembrant" in the above is not common terminology. It is intended to
 
 The notation here is both an attempt to make the three-fold division of the project (three Whitehead theorems, three Puppe sequences, etc.) manifest while sticking to the standard notation for the established theorems (Σ, Ω, B, E). In the above, P could be said to stand for ``(remembrant) path space" and p for ``(remembrant) pullback", while at the same time this matches the theme that our capital letters reflect various internal structures and that their lower-case forms reflect the corresponding actions.\\
 
-The mentioned ``delooping principals", which identify inverses to the remembrant functors $\textit{on their essential image}$, form important consequences of the three Whitehead theorems. All in all, there are twelve important theorems we want to show:\\
+The mentioned ``delooping principals", which identify inverses to the remembrant functors $\textit{on their essential image}$, form important consequences of the three Puppe sequences. All in all, there are nine important theorems we want to show:\\
 
 %LEAN: 
 \begin{center}
 \begin{tcolorbox}[width=6.6in,colback={white},title={\begin{center}\texttt{Twelve Goals}  \end{center}},colbacktitle=Yellow,coltitle=black]
 \begin{enumerate}[(I)]
-\item \scalebox{0.9}{Define and inhabit the $\texttt{whitehead\_theorem\_for\_categories : Type}$.}
 \item \scalebox{0.9}{Define the Puppe sequence for ∞-categories and prove its exactness.}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{internal\_category\_delooping\_principal : Type}$.}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{internal\_sheaf\_delooping\_principal : Type}$.}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{whitehead\_theorem\_for\_groupoids : Type}$.}
+\item \scalebox{0.9}{Define and prove the $\texttt{internal\_category\_delooping\_principal : Type}$.}
+\item \scalebox{0.9}{Define and prove the $\texttt{internal\_sheaf\_delooping\_principal : Type}$.}
 \item \scalebox{0.9}{Define the Puppe sequence for ∞-groupoids and prove its exactness}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{internal\_groupoid\_delooping\_principal : Type}$.}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{internal\_groupoid\_action\_delooping\_principal : Type}$.}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{whitehead\_theorem : Type}$.}
+\item \scalebox{0.9}{Define and prove the $\texttt{internal\_groupoid\_delooping\_principal : Type}$.}
+\item \scalebox{0.9}{Define and prove the $\texttt{internal\_groupoid\_action\_delooping\_principal : Type}$.}
 \item \scalebox{0.9}{Define the Puppe sequence for based connected ∞-groupoids and prove its exactness}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{internal\_group\_delooping\_principal : Type}$.}
-\item \scalebox{0.9}{Define and inhabit the $\texttt{internal\_group\_action\_delooping\_principal : Type}$.}
+\item \scalebox{0.9}{Define and prove the $\texttt{internal\_group\_delooping\_principal : Type}$.}
+\item \scalebox{0.9}{Define and prove the $\texttt{internal\_group\_action\_delooping\_principal : Type}$.}
 \end{enumerate}
 \end{tcolorbox}
 \end{center}
 
-None of these theorems are currently contained in Mathlib. The last four are famously known as:
+None of these theorems are currently contained in Mathlib. The last three are well-known.\\
 
-\begin{enumerate}
-\item The Whitehead theorem
-\item The Puppe sequence and its exactness
-\item The theorem that D(P) • D(B) is naturally isomorphic to the identity functor on the essential image of D(P), and that D(B) • D(P) is naturally isomorphic to the identity functor on D(∞-Grpd₀)
-\item The theorem that BG classifies \href{https://en.wikipedia.org/wiki/Principal_bundle}{G-principal bundles}
-\end{enumerate}
+\iffalse
+Where previous approaches to ∞-categories have considered comparisons between models such as the two we will develop here, the goals above provide a unification which I would like to discuss in the section on pairs.\\
+\fi
 
-These four established theorems and the eight novel ones form a good vignette for our project. Where previous approaches have considered comparisons between models such as the ones we have developed here, the goals above provide a unification which I would like to discuss in the section on pairs.\\
-
-In the work that ensues, we plan to take an approach which establishes the known results before the original ones, taking advantage of the predefined πₙ functors in $\texttt{Mathlib 4}$ in the process. This decision will also help to take an approach which is more gradual and incremental, and to start with smaller pull requests.\\
+In the work that ensues, we plan to take an approach which establishes the known results before the original ones, taking advantage of the predefined πₙ functors in $\texttt{Mathlib 4}$ in the process. This decision will also help to start with smaller pull requests.\\
 
 
 \section{Introduction to \texttt{Lean 4}}
@@ -1294,251 +1278,15 @@ The conceptual difference between the first, second, and third Whitehead theorem
 \ \\
 \ \\
 
-
-\part{BASED CONNECTED ∞-GROUPOIDS}
-\newpage
-
-
-\chapter{Chapter 2: ∞\texttt{-Grpd₀}}
-
-
-Here we define the mentioned categories D(∞-Grpd₀) of connected based ∞-groupoids and D(∞-Grpd₀/G₀) mentioned in the introduction.\\
-
-
-
-\section{Ω}
-
-\section{ω}
-
-\section{π₀}
-
-
-
-\chapter{Chapter 3: The Whitehead Theorem}
-
-In this chapter we prove the following (which we have called Whitehead Theorem (c)): ∀(E:D(∞-Grpd₀)),∀(B:D(∞-Grpd₀)),∀(f:E ⭢ B),∀(G:E ⭢ B),(∀(n:Nat),(πₙ F = πₙ G)) ⭢ F = G, where πₙ is notation for π n.\\
-
-This can be shown using CW-replacement and induction on n. Fibrant replacement of an object X entails replacing an object in ∞-Grpd₀ with a CW-object (an object made by successively glueing in higher and higher simplices along their boundaries obtaining a sequence Xₙ). Given an equality π${}_{n+1}(f) = $π${}_{n+1}(g)$ and a homotopy equivalence hₙ : Δ¹ × Xₙ ⭢ Y between $f|_{X_n}, g|_{X_n}$ : Xₙ ⭢ Y, we construct an extension of the homotopy equivalence Δ¹ × $X_{n+1}$ ⭢ Y.\\
-
-\section{HEP for based connected ∞-groupoids}
-
-This 
-
-\section{The Whitehead theorem}
-
-Here we show the Whitehead theorem proper.\\
-
-
-
-\chapter{Chapter 4: Internal Groups}
-
-\section{\texttt{Grp\_(Γ)}}
-
-%LEAN: internal_group
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-/-
-structure internal_group ... where
-  Obj := D(Γ).Obj
--- Dom := 
--- Cod
--- Idn
--- Fst
--- Snd
--- Cmp
--- Id₁
--- Id₂
--- Ass
--- Com
--/
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: GrpdHom
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: GrpdIdn
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: GrpdCmp
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: GrpdId₁
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: GrpdId₂
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: GrpdAss
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: 
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
--- def IntGrp (Γ : pulback_system) : 𝐂𝐚𝐭.Obj := sorry
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: 
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Green,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
--- notation "Grp_(" Γ  ")" => IntGrp Γ
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-\section{\texttt{Act\_(Γ) G}}
-
-Here we define internal group actions. These will be important when we talk about G-principal bundles (themselves defined as internal group actions in the derived category of an overcategory). 
-
-%LEAN: group action
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-/-
-structure group_action (Γ : pullback_system) (G : internal_groupoid Γ) where
-  Obj : D(Γ).Obj
--- Mor : D(Γ).
--- ...
--/
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: ActHom
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-/-
-def ActHom (Γ : pullback_system) (X : groupoid_action Γ)
--/
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: ActIdn
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: ActCmp
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: ActId₁
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: ActId₂
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-%LEAN: ActAss
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{Lean \thelcounter} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Blue,coltitle=black]
-\begin{minted}[breaklines, escapeinside=||]{lean}
-
-\end{minted}
-\end{tcolorbox}
-\end{center}
-
-\section{The Internal Group Principal}
-
-The internal group principal stems from the simple observation that the loop space forms a component of an internal group.\\
-
-
-\section{The Internal Group Action Principal}
-
-The internal group actions principal stems from the simple observation that the homotopy fiber forms a component of an internal group action.\\
-
-
-\section{P}
-
-This section will construct P, which is an internal group that one obtains from any based connected ∞-groupoid.\\
-
-
-\section{p}
-
-This section will construct the functor p mentioned in the introduction. Later we will add a theorem stating that this functor is in fact naturally isomorphic to a functor constructed using ω and using constructions from Eilenberg-Moore theory.\\
-
-
-
-\chapter{Chapter 5: The Puppe Sequence for Based Connected ∞-Groupoids}
+\chapter{Chapter 1: The Puppe Sequence}
 
 This chapter establishes the well know Puppe sequence for the based homotopy groups πₙ. This is the well known Puppe sequence of homotopy groups.
 
 
-\chapter{Chapter 6: The Group Fixed Point Principals}
+
+\chapter{Chapter 2: E}
+
+\chapter{Chapter 2: B}
 
 \section{\texttt{B}}
 
@@ -1581,8 +1329,9 @@ $\texttt{B}$ is the ordinary classifying space, and it is defined on internal gr
 \end{tcolorbox}
 \end{center}
 
-\section{The Internal Group Fixed Point Principal}
+\section{The Internal Group Delooping Principal}
 
+\iffalse
 For a based connected space X, the path space [I,X] is weak equivalent to the loop space ΩX. This observation will allow us to prove that the category of based connected ∞-groupoids is internal groups in itself.\\
 
 %LEAN: 
@@ -1699,10 +1448,11 @@ def internal_groupoid_delooping_principal (Γ : pulback_system) : Type := D(Γ) 
 \end{minted}
 \end{tcolorbox}
 \end{center}
+\fi
 
+\section{The Internal Group Action Delooping Principal}
 
-\section{The Internal Group Action Fixed Point Principal}
-
+\iffalse
 For a based connected space X, a based connected space Y, and a based map f : X ⭢ Y, the homotopy pullback of f with 𝟙 Y is weak equivalent the homotopy pullback with the base. This fascinating insight 
 
 %LEAN: 
@@ -1828,174 +1578,24 @@ def internal_groupoid_action_delooping_principal (Γ : pullback_system) (C : D(�
 \end{minted}
 \end{tcolorbox}
 \end{center}
+\fi
 
 
-\chapter{Chapter 7: The Category of Pairs}
+\chapter{Chapter 3: E}
+
+
+\chapter{Chapter 4: B}
+
+
+\chapter{Chapter 5: B and Abelian Groups}
+
+
 
 
 \part{∞-GROUPOIDS}
 
 
-\chapter{Chapter 8: ∞\texttt{-Grpd}}
 
-
-\section{Ω⃡}
-
-Our choice of symbols refects our choice of three variations of the Whitehead theorem and three Puppe sequences. Ω⃡, the analogue of loop space, is the internal hom functor [I,-] : ∞-Grpd ⭢ ∞-Grpd. This is not hard to construct, with the main lemma being that the path space of a quasicategory has the quasicategory lifting conditon.\\
-
-We will be interested in one formal model of D(∞-Cat) which consists of formal compositions f₁ • g₁ • f₂ • g₂ • ⋯ • fₙ • gₙ, where gₙ $: Dom(f{}_{n+1}) $⭢ ??? is a weak equivalence, and something similar for D(∞-Cat). However, it is still vital to have the replacement functor $\texttt{repl}$, which ensures the Whitehead theorem for particular ∞-categories which are constructed out of attaching maps.\\
-
-
-\section{ω⃡}
-
-Ω⃗ is to internal categories as ω⃡ is to internal G-actions. It is also called directed homotopy pullback. These functors will later be used to produce functors P⃡ : D(∞-Grpd) ⭢ IntCat D(∞-Grpd) and p⃡ : D(∞-Grpd⁄C) ⭢ InfPreShf (P⃡ G) D(∞-Grpd⁄G).\\
-
-
-\section{π⃡ₙ}
-
-The mentioned functors π⃡ₙ are designed with both Whitehead theorem (a) and Puppe sequence (a) in mind.\\
-
-
-
-\chapter{Chapter 9: The Whitehead Theorem for ∞-Groupoids}
-
-In this chapter, we take on the objective of Whitehead theorem (a), out of which we will prove the other more concrete Whitehead theorems:\\
-
-\begin{center} ∀(E:D(∞-Cat)),∀(B:D(∞-Cat)),∀(F:E ⭢ B),∀(G:E ⭢ B),(∀(n:Nat),(π⃗ₙ F = π⃗ₙ G)) ⭢ F = G
-\end{center}
-
-We can attempt to form a slightly different category, much like the above, called 𝓓(∞-Cat), at first, and in a formal way, so as to create a category whose object component 𝓓(∞-Cat).α matches the object component ∞-Cat.α while featuring the above theorem in a formal way. However, with this as our model of D(∞-Cat), we may then also be interested in the establishment of a model in which the Whitehead theorem is demonstrated, with the main idea being to prove two complementary concepts:
-
-\begin{enumerate}
-\item (REP) Establish a kind of ``weak equivalent fibrant replacement" R : ∞-Cat.α ⭢ ∞-Cat.α (.α gives the object component in Mathlib's category theory library), analogous to CW-complex replacement in Whitehead's original paper. It's especially nice if R forms the object component of a functor F : ∞-Cat ⭢ ∞-Cat. D(F) : D(∞-Cat) ⭢ D(∞-Cat) should be a categorical equivalence, and that is what we will do.
-\item (HEP) For the object R X, demonstrate that any F,G : (R X) ⭢ Y such that ∀(n:Nat),(π⃗ₙ F = π⃗ₙ G), there is a directed homotopy equivalence between F and G. Note that ``directed homotopy equivalence" consists of a composible sequence of simple directed homotopies Hᵢ : Δ¹ × (R X) ⭢ Y, 1 ≤ i ≤ n, with even Hᵢ running reverse to the odd Hᵢ.
-\end{enumerate} 
-
-Both of these will use induction on Lean's $\texttt{Nat}$. The first of these could be called a REP (for REplacement Property, but this isn't usual terminology), and the second typically uses induction and a HEP (Homotopy Extension Property). Our REPa will consist of objects made out of particular kinds of pushouts called attaching maps, and can be made functorial. Proving the HEPa can be done by well-order induction on the attaching maps present in our choice of R, thereby reducing to the case of extending a homotopy along a single attachment.\\
-
-Our HEPa (directed box filling) is similar to the HEP shown in Whitehead's original paper, and to the approach detailed in Hatcher's textbook, though no doubt modified to suit our two goals:
-
-\begin{enumerate}[(I)]
-\item The analogue of the Puppe sequence on the front cover needs to hold.
-\item The first Whitehead theorem on the front cover needs to hold.
-\end{enumerate}
-
-These two considerations determine our choice of π⃗ₙ, Ω⃗, and ω⃗. We take Ω⃗ to be (simply) the internal hom functor [Δ¹,-] (which requires showing that Ω⃗X has the inner-horn filling condition). ω⃗ is then defined as a certain pullback of Ω⃗, and π⃗ₙ is designed to produce a Puppe sequence with a meaningful notion of exactness by which we can demonstrate the goal of delooping principals (i) and (ii). Specifically, it makes sense to use cubes in our definition of π⃗ₙ because of how they are representing objects of Ω⃗ⁿ. Meanwhile, it is also clear that the quotient producing π⃗ₙ is subtle in exactly how it requires fixing the endpoints of a sequence of alternating directed homotopies. We will define π⃗ₙ's by identifying those objects x, y: Ω⃗ⁿ X which are homotopic by a homotopy which restricts to a constant along the face maps fᵢ : Ω⃗${}^{n-1}$ X ⭢ Ω⃗${}^{n-1}$ X (which correspond to pairs (n,b), where b : Bool).\\
-
-Imagine for a moment the picture of a square shaped cusion; we might make such a cusion by first soeing together 6 squares of cloth and filling it with material, then "soeing the walls down to a square". Here we go with this:
-
-\begin{enumerate}
-\item Define a n-cubical cusion using the boundary of an n-1 cube times Δ¹, i.e. the quotient of (Δ¹)${}^{n-1}$ × Δ¹ by an equivalence relation, but we have to start our model somewhere), or perhaps more easily the pushout of f : Δ¹ × (∂((Δ¹)ⁿ)) ⭢ (Δ¹)${}^{n+1}$ by the projection map Δ¹ × (∂((Δ¹)ⁿ)) ⭢ ∂((Δ¹)ⁿ)
-\item Define a simplicial cusion using the boundary of an n-1 simplex times Δ¹, i.e. the quotient of (Δ¹) by an equivalence relation, or perhaps more easily the pushout of f : Δ¹ × (∂(Δⁿ)) ⭢ (Δ¹) × Δⁿ by the projection map Δ¹ × (∂((Δ¹)ⁿ)) ⭢ ∂(Δⁿ)
-\end{enumerate}
-
-The boundary of a cusion is a pouch, isomorphic to a pushout of two cubes glued together at their boundaries:
-
-\begin{enumerate}
-\item Define a n-cubical pouch as the pushout of two boundary maps ∂((Δ¹)ⁿ) ⭢ (Δ¹)ⁿ
-\item Define a simplicial pouch as the pushout of two boundary maps ∂(Δⁿ) ⭢ Δⁿ
-\end{enumerate}
-
-Notice that paths in Ω⃗ⁿX produce paths in Ω⃗${}^{n-1}$X in as many ways as there are face maps (Δ¹)${}^{n-1}$ ⭢ Δ¹${}^{n}$, these could be called restrictions and are no doubt related to the pouches and cusions we just defined. The cartesian closed structure on simplicial sets with the lifting condition clarifies the relationship between the two available definitions of π⃗ₙ:
-
-\begin{enumerate}
-\item Homotopies of maps from a cube which are constant on the boundary
-\item Paths of maps in Ω⃗${}^{n-1}$X which produce constant maps under the mentioned restritions.
-\item Maps from a pouch mod an equivalence relation (really we phrase this as a pushout!), namely the equivalence relation in which any two maps from a pouch that extend to maps from a cusion are identified.
-\end{enumerate}
-
-After we construct π⃗ₙ in the first section, we will be in a place to demonstrate that the natural transformation $\texttt{weak\_equivalence : repl ⭢ (𝟙 }$∞$\texttt{-Cat)}$ consists of weak equivalences (a fact which we call REP, which is short for REplacement Principal). This is covered in the section titled REP, which also constructs $\texttt{repl}$ and $\texttt{weak\_requivalence}$.\\
-
-In sum, the goal of the present chapter is to use similar insights to the proof of the Whitehead theorem featured Hatcher's textbook to prove Wa and Pa for the model of quasicategories, using Mathlib's predefined horns and simplices in its simplicial sets section. The main difference is that our work must take care to respect the directed nature of quasicategories.\\
-
-\iffalse
-In the future, we intend to add important aspects of the bigger picture besides those which directly establish REP and HEP in the sections below. These are important considerations in ensuring usability. Three different model structures on ∞-Cat ensue from the six definitions below, which are contained in Lurie's ``Higher Topos Theory" on page 53, and which are due to Joyal:
-
-\begin{definition} A morphism $\texttt{f : X ⭢ S}$ of simplicial sets is
-\begin{enumerate}
-\item A left fibration if f has the right lifting property with respect to all
-horn inclusions Λni ⊆ ∆n, 0 ≤ i < n.
-\item A right fibration if f has the right lifting property with respect to all
-horn inclusions Λni ⊆ ∆n, 0 < i ≤ n.
-\item An inner fibration if f has the right lifting property with respect to all
-horn inclusions Λni ⊆ ∆n, 0 < i < n.
-\end{enumerate}
-A morphism of simplicial sets $\texttt{i : A ⭢ B}$ is
-\begin{enumerate}
-\item left anodyne if $\texttt{i}$ has the left lifting property with respect to all left fibrations.
-\item right anodyne if $\texttt{i}$ has the left lifting property with respect to all right fibrations.
-\item inner anodyne if $\texttt{i}$ has the left lifting property with respect to all inner fibrations.
-\end{enumerate}
-\end{definition}
-\fi
-
-\begin{enumerate}
-\item Defining $\texttt{repl}$
-\item 
-\end{enumerate}
-
-
-\section{REP}
-
-We have divided the work of proving Whitehead theorem (a) into two steps: REP and HEP. In this section, we construct a functor $\texttt{repl : }$∞$\texttt{-Cat ⭢ }$∞$\texttt{-Cat}$ along with a natural transformation $\texttt{weak\_equivalence : repl ⭢ (𝟙 }$∞$\texttt{-Cat)}$. To construct $\texttt{repl}$ 
-
-
-\section{HEP}
-
-Consider the context of , supposing that we have constructed a homotopy ... This gives a picture that is a bit like ``filling up a jar``: a homotopy h : of f, g : ∂Δ² ⭢ Y, along with the value of g on Δ², produces a ``jar" shape in Y, which can be ``filled up" to produce a homotopy h : Δ¹ × Δ² ⭢ Y. This is easier for simplicial-based approaches than for point-set topological approaches, the latter of which needs extra steps that deform a map into a cellular map.\\
-
-This construction, in the case of point set topology, often involves first deforming maps so as to be cellular; however our analogue of CW complexes allows us to skip this step.\\
-
-This construction (HEP for quasicategories) may even be equivalent to the quasicategory lifting condition if we are lucky. It is also the main technical device allowing for our concrete choice of model (quasicategories).\\
-
-In this section, we demonstrate this extension property and use it to conclude the Whitehead theorem for ∞-categories stated above.\\
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{HEP.png}
-\end{center}
-
-{\bf Prism Filling (PF)} Let Y be a quasicategory, and let f, g : ∂Δⁿ ⭢ Y. A homotopy h : ∂Δⁿ × Δ¹ ⭢ Y between f, g : ∂Δⁿ ⭢ Y extends to a map H : Δⁿ × Δ¹ ⭢ Y; this follows from the condition that Y be a quasicategory. H(-,1) and g match on ∂Δⁿ, producing a map f : X ⭢ Y, where X consists of two copies of Δⁿ glued together at the boundary. Consider a space X' formed as a quotient of Δⁿ × Δ¹ by ∂Δⁿ × Δ¹. There is a map φ : X ⭢ X'. An induction hypothesis on f and g involving πₙ ensures that the aparent map X ⭢ Y lifts along φ, producing a map from Δⁿ × Δ¹ which is constant on ∂Δⁿ × Δ¹. Stacking this on top of H can be done using an isomorphism between Δ¹ and Δ¹ glued with itself along different endpoints. Altogether this produces a homotopy between f and g.\\
-
-Directed prism filling may combine fruitfully with the yoneda lemma and/or the fact that simplicial sets are determined by the sets [Δⁿ,X] along with combinatorial information (face and degeneracy maps).
-
-{\bf Decomposing Δⁿ × Δ¹ into a colimit involving n+1 Δ${}^{n+1}$'s} ...
-
-\begin{center}
-\includegraphics[width=300pt]{prismfilling.png}
-\end{center}
-
-In the above, it may be easier if we make use of sub-simplicial sets and prove the theorem using that colimit applied to a natural isomorphism of diagrams products an isomorphism.\\
-
-The decomposition 
-
-A definition of π⃗ₙ which is consistent with our goals of Wa and Pa is one as a certain pushout involving (Ω⃗ⁿ X)-- one which amounts to taking an equivalence relation by paths in Ω⃗ⁿ X which restrict to constant paths along the face maps fᵢ : Ω⃗${}^{n-1}$ X ⭢ Ω⃗ⁿ X. Here, Ω⃗ is easy to define in the model of quasi-categories, and it amounts . Besides fullfilling our goal of the first Whitehead theorem and puppe sequence, this definition of π⃗ₙ strikes me as elegant because it uses all of the ways for Ω⃗ⁿ X to map into Ω⃗${}^{n+1}$ X.\\
-
-The next symbols in the project's ``periodic table" that we construct, after Ω⃗ and π⃗ₙ, will be B⃗ and E⃗, which we feature in the chapter on Puppe sequence (a).\\
-
-A useful thing for us to construct first is the boundary of a product of Δ¹'s and the boundary of a directed simplex. We might even like to expand on this later, but for now just consider for a moment how each might be made out of a glueing construction involving face maps.\\
-
-Even though the π⃗ₙ's can be defined using Ω⃗ⁿ X and various face maps f$\_(n,b)$ : Ω⃗${}^{n-1}$ X ⭢ Ω⃗${}^{n}$ X for $b : \{ 0, 1 \}$, it may be nice to have this as a result, with the definition one featuring two cubes glued together along their boundary.\\
-
-This means that we want directed box filling in addition to directed prism filling (but which also uses directed prism filling in its proof).
-
-{\bf Box Filling (BF)} Let Y be a quasicategory, and let f, g : ∂Δⁿ ⭢ Y. A homotopy h : ∂Δⁿ × Δ¹ ⭢ Y between f, g : ∂Δⁿ ⭢ Y extends to a map H : Δⁿ × Δ¹ ⭢ Y; this follows from the condition that Y be a quasicategory. H(-,1) and g match on ∂Δⁿ, producing a map f : X ⭢ Y, where X consists of two copies of Δⁿ glued together at the boundary. Consider a space X' formed as a quotient of Δⁿ × Δ¹ by ∂Δⁿ × Δ¹. There is a map φ : X ⭢ X'. An induction hypothesis on f and g involving πₙ ensures that the aparent map X ⭢ Y lifts along φ, producing a map from Δⁿ × Δ¹ which is constant on ∂Δⁿ × Δ¹. Stacking this on top of H can be done using an isomorphism between Δ¹ and Δ¹ glued with itself along different endpoints. Altogether this produces a homotopy between f and g.\\
-
-This goes hand-in-hand with a definition of π⃗ₙ which suits (I) and (II) in the introduction to chapter (3). If we make sure to prove lemmas... 
-
-The box filling and prism filling HEPs can be extended to the case of attaching all cells of a particular fixed dimension and as indexed by simplicial set arising from a set (or Lean 4 $\texttt{Type}$). That is, we might like to extend × $()$ (or possibly somehow a $\texttt{Set}$ as well), and that we may find an interest in the following two definitions of π⃗ₙ, which are designed to fullfill both (I) and (II) in the chapter's introduction.\\
-
-Breaking down BF further can be done conveniently using sub-simplicial sets, just like we used in the proof of prism filling. 
-
-\begin{center}
-\includegraphics[width=300pt]{boxfilling.png}
-\end{center}
-
-
-{\bf Decomposing (Δ¹)ⁿ into a colimit involving n! Δⁿ's} Consider the face maps fᵢ : Δⁿ ⭢ Δ${}^{n+1}$
-
-
-The decomposition 
-The box filling lemma allows us to prove HEP:
 
 
 \section{The Whitehead Theorem for ∞-Cat}
