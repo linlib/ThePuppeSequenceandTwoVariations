@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} def internal\PYGZus{}category\PYGZus{}delooping\PYGZus{}principal : Type := D(∞\PYGZhy{}ℂ𝕒𝕥) ≃ (DeloopableIntCat D(∞\PYGZhy{}ℂ𝕒𝕥))}
+\end{Verbatim}

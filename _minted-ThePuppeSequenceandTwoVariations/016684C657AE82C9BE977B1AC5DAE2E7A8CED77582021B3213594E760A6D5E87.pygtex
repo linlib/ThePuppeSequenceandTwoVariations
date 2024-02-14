@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} def Par (C : D(∞\PYGZhy{}ℂ𝕒𝕥).Obj) : Shf\PYGZus{}(∞\PYGZhy{}ℂ𝕒𝕥) (P\PYGZus{}(∞\PYGZhy{}ℂ𝕒𝕥) C C (𝟙\PYGZus{}(D(∞\PYGZhy{}ℂ𝕒𝕥)) C)) ⭢ (Cmp\PYGZus{}(∞\PYGZhy{}ℂ𝕒𝕥) C) := sorry}
+\end{Verbatim}

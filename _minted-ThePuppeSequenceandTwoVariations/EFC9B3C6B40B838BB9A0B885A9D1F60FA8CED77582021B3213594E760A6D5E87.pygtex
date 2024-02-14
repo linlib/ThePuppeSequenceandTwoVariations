@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} def B⃗ : (𝐂𝐚𝐭.Hom Cat\PYGZus{}(∞\PYGZhy{}ℂ𝕒𝕥) D(∞\PYGZhy{}ℂ𝕒𝕥)).Obj := sorry}
+
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{}}
+\end{Verbatim}

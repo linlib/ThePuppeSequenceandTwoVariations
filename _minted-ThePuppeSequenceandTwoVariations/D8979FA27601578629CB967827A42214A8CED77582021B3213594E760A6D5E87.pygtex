@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} definition of an internal functor in a pullback system}
+\PYG{k+kd}{structure} \PYG{n}{internal\PYGZus{}functor} \PYG{o}{(}\PYG{n+nb+bp}{Γ} \PYG{o}{:} \PYG{n}{pullback\PYGZus{}system}\PYG{o}{)} \PYG{o}{(}\PYG{n}{C} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{o}{(}\PYG{n}{D} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{n}{where}
+  \PYG{n}{Obj} \PYG{o}{:} \PYG{n}{D}\PYG{o}{(}\PYG{n+nb+bp}{Γ}\PYG{o}{)}\PYG{n+nb+bp}{.}\PYG{n}{Hom} \PYG{n}{C.Obj} \PYG{n}{D.Obj}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Mor : D(Γ).}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Fst : D(Γ).}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Snd : D(Γ).}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Idn : D(Γ).}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Cmp : D(Γ).}
+\end{Verbatim}

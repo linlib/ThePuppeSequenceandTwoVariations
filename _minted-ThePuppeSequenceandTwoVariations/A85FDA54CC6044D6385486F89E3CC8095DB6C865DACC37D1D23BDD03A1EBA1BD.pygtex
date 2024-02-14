@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{k+kd}{def} \PYG{n}{transitivity} \PYG{o}{\PYGZob{}}\PYG{n}{X} \PYG{o}{:} \PYG{k+kt}{Type}\PYG{o}{\PYGZcb{}} \PYG{o}{\PYGZob{}}\PYG{n}{x} \PYG{o}{:} \PYG{n}{X}\PYG{o}{\PYGZcb{}} \PYG{o}{\PYGZob{}}\PYG{n}{y} \PYG{o}{:} \PYG{n}{X}\PYG{o}{\PYGZcb{}} \PYG{o}{\PYGZob{}}\PYG{n}{z} \PYG{o}{:} \PYG{n}{X}\PYG{o}{\PYGZcb{}} \PYG{o}{(}\PYG{n}{p} \PYG{o}{:} \PYG{n}{x} \PYG{n+nb+bp}{=} \PYG{n}{y}\PYG{o}{)} \PYG{o}{(}\PYG{n}{q} \PYG{o}{:} \PYG{n}{y} \PYG{n+nb+bp}{=} \PYG{n}{z}\PYG{o}{)} \PYG{o}{:=} \PYG{n}{Eq.trans} \PYG{n}{p} \PYG{n}{q}
+
+\end{Verbatim}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} internal C\PYGZhy{}presheaves}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} def internal\PYGZus{}presheaf (C : (IntCat C).Obj) : Type := sorry}
+\end{Verbatim}

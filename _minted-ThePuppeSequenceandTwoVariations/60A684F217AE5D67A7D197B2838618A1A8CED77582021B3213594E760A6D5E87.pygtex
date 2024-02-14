@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} proving the the first identity law for internal categories in a pullback system}
+\PYG{k+kd}{def} \PYG{n}{IntCatId₁} \PYG{o}{(}\PYG{n+nb+bp}{Γ} \PYG{o}{:} \PYG{n}{pullback\PYGZus{}system}\PYG{o}{)} \PYG{o}{(}\PYG{n}{X} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{o}{(}\PYG{n}{Y} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{o}{(}\PYG{n}{f} \PYG{o}{:} \PYG{n}{internal\PYGZus{}functor} \PYG{n+nb+bp}{Γ} \PYG{n}{X} \PYG{n}{Y}\PYG{o}{)} \PYG{o}{:} \PYG{n}{IntCatCmp} \PYG{n+nb+bp}{Γ} \PYG{n}{X} \PYG{n}{Y} \PYG{n}{Y} \PYG{n}{f} \PYG{o}{(}\PYG{n}{IntCatIdn} \PYG{n+nb+bp}{Γ} \PYG{n}{Y}\PYG{o}{)} \PYG{n+nb+bp}{=} \PYG{n}{f} \PYG{o}{:=} \PYG{g+gr}{sorry}
+\end{Verbatim}

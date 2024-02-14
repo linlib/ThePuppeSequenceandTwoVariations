@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{k+kd}{def} \PYG{n}{zero} \PYG{o}{:} \PYG{n}{Nat} \PYG{o}{:=} \PYG{l+m+mi}{0}
+
+\end{Verbatim}
