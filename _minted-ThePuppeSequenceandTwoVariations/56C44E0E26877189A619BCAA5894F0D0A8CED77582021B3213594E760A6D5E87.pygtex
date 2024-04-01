@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
-\PYG{c+c1}{\PYGZhy{}\PYGZhy{} definition of the composition of internal functors in a pullback system}
-\PYG{k+kd}{def} \PYG{n}{IntCatCmp} \PYG{o}{(}\PYG{n+nb+bp}{Γ} \PYG{o}{:} \PYG{n}{pullback\PYGZus{}system}\PYG{o}{)} \PYG{o}{(}\PYG{n}{C} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{o}{(}\PYG{n}{D} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{o}{(}\PYG{n}{E} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{o}{(}\PYG{n}{F} \PYG{o}{:} \PYG{n}{internal\PYGZus{}functor} \PYG{n+nb+bp}{Γ} \PYG{n}{C} \PYG{n}{D}\PYG{o}{)} \PYG{o}{(}\PYG{n}{G} \PYG{o}{:} \PYG{n}{internal\PYGZus{}functor} \PYG{n+nb+bp}{Γ} \PYG{n}{D} \PYG{n}{E}\PYG{o}{)} \PYG{o}{:} \PYG{o}{(}\PYG{n}{internal\PYGZus{}functor} \PYG{n+nb+bp}{Γ} \PYG{n}{C} \PYG{n}{E}\PYG{o}{)} \PYG{o}{:=} \PYG{g+gr}{sorry}
-\end{Verbatim}

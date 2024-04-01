@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
-\PYG{c+c1}{\PYGZhy{}\PYGZhy{} definition of the identity internal functor in a pullback system}
-\PYG{k+kd}{def} \PYG{n}{IntCatIdn} \PYG{o}{(}\PYG{n+nb+bp}{Γ} \PYG{o}{:} \PYG{n}{pullback\PYGZus{}system}\PYG{o}{)} \PYG{o}{(}\PYG{n}{C} \PYG{o}{:} \PYG{n}{internal\PYGZus{}category} \PYG{n+nb+bp}{Γ}\PYG{o}{)} \PYG{o}{:} \PYG{o}{(}\PYG{n}{internal\PYGZus{}functor} \PYG{n+nb+bp}{Γ} \PYG{n}{C} \PYG{n}{C}\PYG{o}{)} \PYG{o}{:=} \PYG{g+gr}{sorry}
-\end{Verbatim}

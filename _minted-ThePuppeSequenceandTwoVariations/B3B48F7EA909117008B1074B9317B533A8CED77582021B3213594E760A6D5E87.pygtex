@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
-\PYG{c+c1}{\PYGZhy{}\PYGZhy{} def BInfGrpd : (𝐂𝐚𝐭.Hom Grpd\PYGZus{}(∞\PYGZhy{}𝔾𝕣𝕡𝕕) D(∞\PYGZhy{}𝔾𝕣𝕡𝕕)).Obj := sorry}
-\end{Verbatim}
