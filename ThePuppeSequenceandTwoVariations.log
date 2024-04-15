@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.8)  6 APR 2024 06:00
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.8)  13 APR 2024 18:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -68,6 +68,36 @@ X
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+
+Package fontspec Info: Could not resolve font "STIX Two Text/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'STIXTwoText(0)' created for font 'STIX Two
+(fontspec)             Text' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"STIX Two
+(fontspec)             Text/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"STIX Two
+(fontspec)             Text/OT:script=latn;language=dflt;+smcp;mapping=tex-text
+;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"STIX Two
+(fontspec)             Text/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"STIX Two
+(fontspec)             Text/I/OT:script=latn;language=dflt;+smcp;mapping=tex-te
+xt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"STIX Two
+(fontspec)             Text/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"STIX Two
+(fontspec)             Text/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+
+
 (/usr/local/texlive/2022/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
@@ -707,12 +737,20 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Font shape `TU/STIXTwoText(0)/m/sl' in size <10> not availa
+ble
+(Font)              Font shape `TU/STIXTwoText(0)/m/it' tried instead on input 
+line 316.
+
+
+LaTeX Font Warning: Font shape `TU/STIXTwoText(0)/b/n' undefined
+(Font)              using `TU/STIXTwoText(0)/m/n' instead on input line 356.
+
 LaTeX Font Info:    Trying to load font information for T3+lmss on input line 3
 57.
 LaTeX Font Info:    No file T3lmss.fd. on input line 357.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 35
 7.
-
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -866,6 +904,10 @@ File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowwidth=\dimen284
 \pgfarrowlinewidth=\dimen285
 )))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
+Package: draftwatermark 2020/12/08 3.0 Put a gray textual watermark on document
+ pages
+)
 \c@definition=\count371
 \c@theorem=\count372
 \c@example=\count373
@@ -889,101 +931,108 @@ runsystem(rm ThePuppeSequenceandTwoVariations.aex)...executed.
  (./ThePuppeSequenceandTwoVariations.aux)
 \openout1 = `ThePuppeSequenceandTwoVariations.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 400.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 407.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-00.
+07.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 400.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 407.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4
-00.
+07.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 400.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 400.
-LaTeX Font Info:    ... okay on input line 400.
+LaTeX Font Info:    ... okay on input line 407.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 407.
+LaTeX Font Info:    ... okay on input line 407.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 400.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 400.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 400.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 400.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 400.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 400.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 400.
-LaTeX Font Info:    Redeclaring math accent \check on input line 400.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 400.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 400.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 400.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 400.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 400.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 407.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 407.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 407.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 407.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 407.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 407.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 407.
+LaTeX Font Info:    Redeclaring math accent \check on input line 407.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 407.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 407.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 407.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 407.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 400.
+(Font)              `operators' in the math version `normal' on input line 407.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 400.
+(Font)                  OT1/cmr/m/n --> TU/STIXTwoText(0)/m/n on input line 407
+.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 400.
+(Font)              `operators' in the math version `bold' on input line 407.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 400.
+(Font)                  OT1/cmr/bx/n --> TU/STIXTwoText(0)/m/n on input line 40
+7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 400.
+(Font)                  TU/STIXTwoText(0)/m/n --> TU/STIXTwoText(0)/m/n on inpu
+t line 407.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 400.
+(Font)                  OT1/cmr/m/it --> TU/STIXTwoText(0)/m/it on input line 4
+07.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 400.
+(Font)                  OT1/cmr/bx/n --> TU/STIXTwoText(0)/b/n on input line 40
+7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 400.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 407.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 400.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 407.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 400.
+(Font)                  TU/STIXTwoText(0)/m/n --> TU/STIXTwoText(0)/b/n on inpu
+t line 407.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 400.
+(Font)                  OT1/cmr/bx/it --> TU/STIXTwoText(0)/b/it on input line 
+407.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 400.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 407.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 400.
-Package hyperref Info: Link coloring OFF on input line 400.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 407.
+Package hyperref Info: Link coloring OFF on input line 407.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -997,9 +1046,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count386
 )
-LaTeX Info: Redefining \ref on input line 400.
-LaTeX Info: Redefining \pageref on input line 400.
-LaTeX Info: Redefining \nameref on input line 400.
+LaTeX Info: Redefining \ref on input line 407.
+LaTeX Info: Redefining \pageref on input line 407.
+LaTeX Info: Redefining \nameref on input line 407.
  (./ThePuppeSequenceandTwoVariations.out)
 (./ThePuppeSequenceandTwoVariations.out)
 \@outlinefile=\write6
@@ -1041,306 +1090,232 @@ LaTeX Info: Redefining \nameref on input line 400.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--417
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 421
+LaTeX Font Info:    Trying to load font information for U+msa on input line 428
 .
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 421
+LaTeX Font Info:    Trying to load font information for U+msb on input line 428
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 42
-1.
+8.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman10-regular]:mapping=t
-ex-text;!
-
-Overfull \hbox (7.22743pt too wide) in paragraph at lines 428--428
+Overfull \hbox (7.22743pt too wide) in paragraph at lines 435--435
  [] 
  []
 
 [1
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 471--474
+Underfull \hbox (badness 10000) in paragraph at lines 478--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--474
+Underfull \hbox (badness 10000) in paragraph at lines 478--481
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--498
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--528
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 5
-48.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/bbold/Ubbold.fd)
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 633--633
+55.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/bbold/Ubbold.fd) [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 640--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--633
+Underfull \hbox (badness 10000) in paragraph at lines 640--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
 
  []
 
 
-Overfull \hbox (4.59814pt too wide) in paragraph at lines 658--659
-[]\TU/lmr/m/n/12 Categories (see Mathlib’s $[]$ here; these can be bundled into
- $[]$) 
+Overfull \hbox (3.97151pt too wide) in paragraph at lines 646--647
+\TU/STIXTwoText(0)/b/n/12 quence, involving internal categories and internal pr
+esheaves, to be defined and proven
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
+
+ []
+
 [8]
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
-
- []
-
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--697
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
 [9]
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 698--699
 
  []
@@ -1350,135 +1325,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 700--701
 
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--717
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--730
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
 
  []
 
 [10]
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
 
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
 
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--753
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
 
  []
 
 [11]
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
-Overfull \hbox (22.23456pt too wide) in paragraph at lines 763--765
-\TU/lmr/m/n/12 pullback with the base form components of the functors Alg(Mon($
-\OML/cmm/m/it/12 !$\TU/lmr/m/n/12 ⃗)), Alg(Mon($\OML/cmm/m/it/12 !$\TU/lmr/m/n/
-12 ⃡)),
- []
-
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
-
+Overfull \hbox (15.85379pt too wide) in paragraph at lines 765--767
+\TU/STIXTwoText(0)/b/n/12 pullback with the base form components of the functor
+s Alg(Mon($\OML/cmm/m/it/12 !$\TU/STIXTwoText(0)/b/n/12 ⃗)), Alg(Mon($\OML/cmm/
+m/it/12 !$\TU/STIXTwoText(0)/b/n/12 ⃡)),
  []
 
 
@@ -1486,438 +1377,267 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--774
 
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-[12]
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 775--776
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 814--815
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 825--826
+Underfull \hbox (badness 10000) in paragraph at lines 816--817
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--819
+
+ []
+
+
+Overfull \hbox (41.66934pt too wide) in paragraph at lines 831--832
+ [] 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 827--828
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
 
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
 
-Overfull \hbox (51.10133pt too wide) in paragraph at lines 840--841
- [] 
+Underfull \hbox (badness 10000) in paragraph at lines 860--861
+
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃗ (U+20D7) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
-Missing character: There is no ⃡ (U+20E1) in font [lmroman8-regular]:mapping=te
-x-text;!
 
-Overfull \hbox (21.6273pt too wide) in paragraph at lines 847--866
+Underfull \hbox (badness 10000) in paragraph at lines 862--863
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 864--865
+
+ []
+
+
+Overfull \hbox (50.58987pt too wide) in paragraph at lines 880--880
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--868
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--870
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 871--872
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 873--874
-
- []
-
-
-Overfull \hbox (50.58987pt too wide) in paragraph at lines 889--889
- [] 
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 892--893
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 898--899
+Underfull \hbox (badness 10000) in paragraph at lines 889--890
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 903--903
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--903
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1034
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1034
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1046
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1046
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1051
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1042
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1051
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1042
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1063
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1063
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1077
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1068
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1077
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1068
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 1086--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1086--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1089
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1089
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
 
  []
 
-Missing character: There is no ⃗ (U+20D7) in font [lmroman12-regular]:mapping=t
-ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1082
 
  []
 
 [26]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <24.88> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1094.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1085.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1100
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1100
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
 
  []
 
 [28]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1158.
+Overfull \hbox (3.3635pt too wide) in paragraph at lines 1138--1139
+[]\TU/STIXTwoText(0)/b/n/12 Saunders Mac Lane, ”Categories for the Working Math
+ematician,” Graduate Texts
+ []
 
-Overfull \hbox (93.00768pt too wide) in paragraph at lines 1160--1161
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1149.
+
+Overfull \hbox (93.00768pt too wide) in paragraph at lines 1151--1152
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][][]
 [] [] [][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][]$[] 
  []
 
-[29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1202
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
+Underfull \hbox (badness 10000) in paragraph at lines 1195--1196
 
  []
 
 File: about.jpg Graphic file (type bmp)
 <about.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
 
  []
 
 File: about2.jpg Graphic file (type bmp)
 <about2.jpg>
-[31] [32] (./ThePuppeSequenceandTwoVariations.aux)
+[30] [31] (./ThePuppeSequenceandTwoVariations.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1927,15 +1647,15 @@ t changed.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 1090 ({)
+### simple group (level 1) entered at line 1081 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30804 strings out of 476179
- 656582 string characters out of 5809544
- 1101192 words of memory out of 5000000
- 50988 multiletter control sequences out of 15000+600000
- 484536 words of font info for 118 fonts, out of 8000000 for 9000
+ 30926 strings out of 476179
+ 660552 string characters out of 5809544
+ 1104619 words of memory out of 5000000
+ 51110 multiletter control sequences out of 15000+600000
+ 484520 words of font info for 116 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 83i,14n,89p,1040b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,14n,89p,1040b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ThePuppeSequenceandTwoVariations.pdf (32 pages).
+Output written on ThePuppeSequenceandTwoVariations.pdf (31 pages).

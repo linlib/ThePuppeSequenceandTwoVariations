@@ -1,7 +1,6 @@
 \documentclass{book}
 \usepackage{fontspec}
-
-
+\setmainfont{STIX Two Text}
 
 %PACKAGES
 \iffalse
@@ -16,6 +15,14 @@ Here are the packages that I use
 \usepackage{tikz}
 \usepackage{tikz-cd}
 
+
+\usepackage{lipsum} % for generating dummy text
+\usepackage{draftwatermark} % for adding watermark
+\usepackage{xcolor} % for colors
+
+% Define the draft watermark
+\SetWatermarkText{\textcolor{red}{ND}}
+\SetWatermarkScale{2} % Adjust the size of the watermark
 
 
 
@@ -34,9 +41,9 @@ Here are the packages that I use
 
 
 \newunicodechar{ₙ}{${}_{n}$}
-
 \newunicodechar{𝓓}{$\mathcal{D}$}
-\newunicodechar{∂}{$\partial$}
+\newunicodechar{∂}{\raisebox{-0.06cm}{$\partial$}}
+\newunicodechar{∇}{\raisebox{-0.05cm}{$\nabla$}}
 
 %\newunicodechar{π⃗}{$\stackrel{\arr}{\pi}$}
 
@@ -428,12 +435,6 @@ Here are the packages that I use
 \end{tcolorbox}
 \end{center}
 
-%LEAN: 
-\begin{center}
-\begin{tcolorbox}[width=4.13in,colback={white},coltitle=white]
-\scalebox{1.5}{E. Dean Young and Jiazhen Xia}
-\end{tcolorbox}
-\end{center}
 
 
 \begin{center}
@@ -585,7 +586,7 @@ D(Pair ∞-Grpd) & The derived category of pairs of ∞-groupoids \\
 \hline
 ∧$\_$(D(Pair ∞-Grpd)), [,]$\_$(D(Pair ∞-Grpd)) & The cartesian closed structure on D(Pair ∞-Grpd) \\
 \hline \hline
-\multicolumn{2}{||c||}{\texttt{Chapter 6: }The Triangle Theorems for ∞-Grpd} \\
+\multicolumn{2}{||c||}{\texttt{Chapter 6: } The Triangle Theorems for ∞-Grpd} \\
 \hline \hline
 The Cycle Theorem & ... \\
 \hline
@@ -632,27 +633,22 @@ The Mayer-Vietoris Sequence & ... \\
 \newpage
 \section{Introduction}
 
-{\bf The main goals of this repository is to define the Puppe sequence and to prove its exactness, along with two variations}.\\
+{\bf The main goal of this repository is to define the Puppe sequence and to prove its exactness}. I would also like to pursue two variations of the Puppe sequence, featuring internal groupoids and internal groupoid actions, and internal categories and internal presheaves, respectively, instead of internal groups and internal group actions. Note that we may construct the Puppe sequence so as to feature groups, group actions, abelian groups, and abelian group actions, which will allow us to use Mathlib's pre-existing structures.\\
 
-\begin{enumerate}[(a)]
-\item ...
-\item ...
-\item ...
-\end{enumerate}
+The document is very incomplete, but expresses intentions and plans that I have. I hope that the highly tabulated approach can make for something maintainable and usable. The Puppe sequence formalization will take place after the completion of the Whitehead theorem, which Jiazhen Xia and I have already make a lot of progress on.\\
 
-We have stated these theorems in the above in an order reversed from the order of its implementation. This choice 
+In the thread I started originally, I had arranged for the most difficult Puppe sequence, involving internal categories and internal presheaves, to be defined and proven first. Unfortunately this approach requires a difficult analogue of ```jar filling'''. Later I assimilated the suggestion of Joël Riou that we start with the Whitehead theorem and Puppe sequence for CW-complexes, in which a jar shape and its higher dimensional analogues can be filled. Jiazhen and I have completed this and the code can be found in the repository of ```TheWhiteheadTheoremandTwoVariations```.\\
 
 We will use two models of each of the following categories in the theorems above:
-
 \begin{enumerate}[(i)]
-\item We model ∞-Cat : Cat firstly as the category of categories enriched over a convenient category of topological spaces, and secondly as the category of quasicategories.
-\item We model ∞-Grpd : Cat firstly as a convenient category of topological spaces, and secondly as the category of Kan complexes.
 \item We model ∞-Grpd₀ : Cat firstly as the based connected objects of a convenient category of topological spaces, and secondly as the category of based connected Kan complexes.
+\item We model ∞-Grpd : Cat firstly as a convenient category of topological spaces, and secondly as the category of Kan complexes.
+\item We model ∞-Cat : Cat both combinatorially with quasicategories and using a point-set model ().
 \end{enumerate}
 
 This choice accords with the standard approach to the third theorem, in which one typically chooses both a combinatorial and point-set model, with the former featuring a geometric realization functor into the latter ($\texttt{Mathlib}$ already has this).\\
 
-We will make heavy use of $\texttt{Mathlib 4}$'s material on category theory, particularly their categories, functors, and natural transformations:
+We will use $\texttt{Mathlib 4}$'s category theory, particularly their categories, functors, and natural transformations:
 
 \begin{enumerate}
 \item Categories (see Mathlib's $\texttt{Category X}$ here; these can be bundled into $\texttt{category}$)
@@ -661,13 +657,17 @@ We will make heavy use of $\texttt{Mathlib 4}$'s material on category theory, pa
 \item Equations between natural transformations (see Mathlib's $\texttt{NatExt}$ here; these are related to our $\texttt{equation}$)
 \end{enumerate}
 
+I also am maintaining a category theory repository I have with Shanghe Chen, which follows the book ```Galois Theories''' by George Janelidze and Francis Borceux. The main addition it makes is that of a seven-entry strict twocategory (as opposed to a particular bicategory). Perhaps the most interesting feature is that both the seven entry category structure and the seven entry strict twocategory structure are instances of the thirteen entry internal category structure used in this repository and which will be defined in the repository concerning the Whitehead theorem.\\
+
 While the functors πₙ occuring in the main theorems above are already defined in $\texttt{Mathlib}$ for the desired point-set model, the functors π⃗ₙ and π⃡ₙ are not, and their definition will require great care. Here are their types:
 
 \begin{enumerate}[(i)]
-\item π⃗ₙ : Functor ∞-Cat Set
-\item π⃡ₙ : Functor ∞-Grpd Set
 \item πₙ : Functor ∞-Grpd₀ Set
+\item π⃡ₙ : Functor ∞-Grpd Set
+\item π⃗ₙ : Functor ∞-Cat Set
 \end{enumerate}
+ 
+The πₙ's in the above are not quite the same as the ones defined in Mathlib already, but several simple lemmas concerning categorical equivalences will solve this small issue.\\
 
 We may wish to modify these types out of convenience and to accord with the pre-existing functors πₙ in $\texttt{Mathlib 4}$.\\
 
@@ -687,15 +687,13 @@ In the course of the repository we will need the directed path space, path space
 \item Ω is the loop space functor
 \end{enumerate}
 
-The third theorem (c), is the one from Whitehead's original papers.\\
+The third theorem (c), is the one from Whitehead's original papers (these are included in the repository concerning the Whitehead theorem).\\
 
 With the choice of quasicategories as a combinatorial model, we hope to give good integration with Mathlib's existing features (though technically only the inner horns and simplices are defined, not even the category of quasicategories itself).\\
 
 In the directed context, a homotopy between two maps in ∞-Cat⁄C consists of a sequence of compatible directed homotopies with the odd morphisms in the sequence formed from reversed copies of Δ¹. Really we have two such categories, one of which consists of formal words, and another which involves ∞-categories and ∞-functors in the image of $\texttt{repl}$).\\
 
-The main technical feature in the proofs of these theorems concerns a lifting property which successively lifts a homotopy along a single attachment of Δⁿ along its boundary ∂Δⁿ. A homotopy h : ∂Δⁿ × Δ¹ ⭢ Y between f, g : ∂Δⁿ ⭢ Y extends to a map H : Δⁿ × Δ¹ ⭢ Y. The directed case requires an extra technical feature. H(-,1) and g match on ∂Δⁿ, producing a map f : X ⭢ Y, where X consists of two copies of Δⁿ glued together at the boundary.\\
-
-Consider a space X' formed as a quotient of Δⁿ × Δ¹ by ∂Δⁿ × Δ¹. There is a map φ : X ⭢ X'. An induction hypothesis on f and g involving πₙ ensures that the aparent map X ⭢ Y lifts along φ, producing a map from Δⁿ × Δ¹ which is constant on ∂Δⁿ × Δ¹. Stacking this on top of H can be done using an isomorphism between Δ¹ and Δ¹ glued with itself along different endpoints. Altogether this produces a homotopy between f and g.\\
+Besides the exactness of the Puppe sequence and its two variations, my hope is that.\\
 
 We will define three different kinds of derived category:\\
 
@@ -715,20 +713,20 @@ We then create the second kind of derived category, one for each of the objects 
 
 For the model built on simplicial sets, Ω⃗ will be representable by Δ¹ with respect to an internal hom, and Ω⃡ will be representable by a model of the unit interval I := [0,1].\\
 
-We will use six ``internal'' structures in addition to the standard structures in category theory:
+I would like to use the ``internal'' structures defined in ```TheWhiteheadTheoremandTwoVariations''', whose types are as follows:\\
 
 \begin{enumerate}
-\item IntCat : Cat → Cat 
-\item InfPreShf : (X : Cat) → (C : (IntCat X)) → Cat
-\item IntGrpd : Cat → Cat
-\item IntAct : (X : Cat) → (G : (IntGrpd X)) → Cat
-\item IntGrp : Cat → Cat
-\item IntAct₀ : (X : Cat) → (G₀ : (IntGrp X)) → Cat
+\item InternalCategory : Cat → Cat 
+\item InternalPresheaf : (X : Cat) → (C : (IntCat X)) → Cat
+\item InternalGroupoid : Cat → Cat
+\item InternalGroupoidAction : (X : Cat) → (G : (IntGrpd X)) → Cat
+\item InternalGroup : Cat → Cat
+\item InternalGroupAction : (X : Cat) → (G₀ : (IntGrp X)) → Cat
 \end{enumerate}
 
-The book ``Galois theories" by Borceux and Janelidze deserves special mention as an inspiration for these internal structures. That book details how to think about Galois theory using internal groupoids, internal G-presheaves, monadicity, comonadicity, and the constructions involved in Eilenberg-Moore theory.\\
+The book ``Galois theories" by Borceux and Janelidze features the middle two internal structures, and the nlab article \href{https://ncatlab.org/nlab/show/internal+category}{here} defines the first. The internal presheaf structure is fascinating and subtle, as well as similar to the internal groupoid action structure.\\
 
-The six internal structures above arise here in relation to six functors:
+The six internal structures above arise here in relation to six functors:\\
 
 \begin{enumerate}[(I)]
 \item Ω⃗ : ∞-Cat ⭢ ∞-Cat (notation for the directed path space functor, related to [Δ¹,-]). D(Ω⃗) factors through internal categories in D(∞-Cat) by a categorical equivalence D(∞-Cat) ≅ IntCat D(∞-Cat) (internal categories in D(∞-Cat))
@@ -748,8 +746,6 @@ The functors ω⃗ (𝟙 C), ω⃡ (𝟙 X), and ω (𝟙 C) in the above ensue 
 \item For B, E : D(∞-Grpd), and f : E ⭢ B, ω⃡ f : D(∞-Grpd/B) ⭢ D(∞-Grpd/E) (derived homotopy pullback)
 \item For B₀, E₀ : D(∞-Grpd₀), and f : E₀ ⭢ B₀, ω f : D(∞-Grpd₀/B₀) ⭢ D(∞-Grpd₀/E₀) (homotopy pullback with the base)
 \end{enumerate}
-
-These six factored functors P⃗ , P⃡ , P : D(∞-Grpd₀), p⃗ (𝟙 C), p⃡ (𝟙 X), p are each fully faithful and produce categorical equivalences; we later construct functors B⃗, B⃡, B, b⃗, b⃡, b defined on the essential image of these six, which are inverse to them up to natural isomorphism.\\
 
 We obtain six categorical equivalences witnessed by these twelve functors (along with twelve natural isomorphisms). Here are the types of P⃗ , P⃡ , P : D(∞-Grpd₀), p⃗ (𝟙 C), p⃡ (𝟙 X), p:
 
@@ -785,17 +781,6 @@ These six new functors combine with the functors below to form categorical equiv
 \item b⃡ : essential\_image p⃡ ⭢ D(∞-Cat⁄C)
 \item b : essential\_image p ⭢ D(∞-Grpd₀⁄X₀) 
 \end{enumerate}
-\end{enumerate}
-
-We will show six categorical equivalences featuring these:
-
-\begin{enumerate}
-\item P⃗ • B⃗ ≅ 𝟙 (DlpIntCat D(∞-Cat)) and B⃗ • P⃗ ≅ 𝟙 D(∞-Cat)
-\item P⃡ • B⃡ ≅ 𝟙 (DlpIntGrpd D(∞-Grpd)) and B⃡ • P⃡ ≅ 𝟙 D(∞-Grpd)
-\item P • B ≅ 𝟙 (DlpIntGrp D(∞-Grpd₀)) and B • P ≅ 𝟙 D(∞-Grpd₀) (see \href{https://mathoverflow.net/questions/128883/why-omega-x-and-bg-are-adjoint-functors}{here})
-\item p⃗ • b⃗ ≅ 𝟙 (DlpInfPreShf D(∞-Cat⁄C) P⃗C) and b⃗ • p⃗ ≅ 𝟙 D(∞-Cat⁄C)
-\item p⃡ • b⃡ ≅ 𝟙 (DlpIntAct D(∞-Cat⁄C) P⃡X) and b⃡ • p⃡ ≅ 𝟙 D(∞-Cat⁄C) 
-\item p • b ≅ 𝟙 (DlpIntAct₀ D(∞-Grpd₀⁄X₀) PX₀) and b • p ≅ 𝟙 D(∞-Grpd₀⁄X₀) (see \href{https://en.wikipedia.org/wiki/Principal_bundle}{here})
 \end{enumerate}
 
 Take special note that each of these six involves a condition ensuring that the functor B⃗ be well defined. Consider the functors:
@@ -1191,35 +1176,7 @@ Ideas for future applications:
 \item \url{https://arxiv.org/pdf/2206.13563.pdf}
 \end{enumerate}
 
-\newpage 
-\ \\
-\ \\
-\ \\
-\ \\
-\ \\
-\ \\
-%LEAN: 
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{About the Author} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Yellow,coltitle=black]
-Dean Young is a master's student at New York University, where he studies mathematics. \\
-\begin{center}
-\includegraphics[width=7.5cm,height=5cm]{about.jpg}
-\end{center}
-\end{tcolorbox}
-\end{center}
 
-\begin{center}
-\begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{About the Author} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Yellow,coltitle=black]
-Jiazhen Xia is a graduate student at Zhejiang University, where he studies computer science. \\
-\begin{center}
-\includegraphics[width=7.5cm]{about2.jpg}
-\end{center}
-\end{tcolorbox}
-\end{center}
-\newpage
-\ \\
-\thispagestyle{empty}
-\pagecolor{Yellow}
 
 
 \end{document}
